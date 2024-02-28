@@ -1,0 +1,64 @@
+.main {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+body{
+  margin-top: 15px;
+}
+.clickable-div {
+    cursor: pointer;
+    border: 0%;
+    padding: 10px;
+    margin: 10px;
+    background-image: url('~src/assets/house.png');
+    background-size: cover;
+    color: black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .clickable2-div {
+    cursor: pointer;
+    border: 0%;
+    padding: 10px;
+    margin: 10px;
+    background-image: url('~src/assets/house2.png');
+    background-size: cover;
+    color: black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .clickable3-div {
+    cursor: pointer;
+    border: 0%;
+    padding: 10px;
+    margin: 10px;
+    background-image: url('~src/assets/house3.png');
+    background-size: cover;
+    color: black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .btn {
+    background-image: url('~src/assets/button1.png');
+    background-size: cover;
+    color: white;
+    height: 46px;
+    width: 160px;
+    padding: 10px;
+    font-size: small;
+    font-weight: bolder;
+  }
+
+  

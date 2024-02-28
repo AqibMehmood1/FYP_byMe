@@ -1,0 +1,55 @@
+<div class="title">
+  <div class="centered">
+    <b style="font-size: large;">Create Group</b>
+  </div>
+  <mat-icon class="closs"  (click)="onCancel()">close</mat-icon>
+</div>
+  <div class="popup-container">
+    <form [formGroup]="form" (ngSubmit)=" onSubmit()">
+      <label for="name">Group Title:</label>
+      <input type="text" id="title" placeholder="Enter Group title" name="title" formControlName="title" class="form-control">
+
+      <div class="form-group">
+        <label for="employee">Supervisor</label>
+        <ng-multiselect-dropdown
+          formControlName="employee"
+          [placeholder]="'Select Supervisor'"
+          [settings]="dropdownSettings"
+          [data]="dropdownList"
+          (onSelect)="onItemSelect($event)"
+        ></ng-multiselect-dropdown>
+      </div>
+
+    <label>Team Lead</label>
+    <ng-multiselect-dropdown formControlName="employee"
+    [placeholder]="'Select Team Lead'"
+    [settings]="dropdownSettings"
+    [data]="dropdownList"
+    (onSelect)="onItemSelect($event)"
+    >
+    </ng-multiselect-dropdown>
+
+    <label>Designers</label>
+    <ng-multiselect-dropdown formControlName="employee"
+    [placeholder]="'Select Designers'"
+    [settings]="dropdownSettings"
+    [data]="dropdownList"
+    (onSelect)="onItemSelect($event)"
+    >
+    </ng-multiselect-dropdown>
+
+    <label>Employees</label>
+    <ng-multiselect-dropdown formControlName="employee"
+    [placeholder]="'Select Employees'"
+    [settings]="dropdownSettings"
+    [data]="dropdownList"
+    (onSelect)="onItemSelect($event)"
+    >
+    </ng-multiselect-dropdown>
+    <div class="buttons-div">
+      <button type="cancel" (click)="onCancel()">Cancel</button>
+      <button type="submit" (click)="handleButtonClick()">Create Group</button>
+    </div>
+    </form>
+     
+    </div>

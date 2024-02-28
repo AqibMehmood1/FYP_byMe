@@ -1,0 +1,48 @@
+<!-- <div class="pro-management">
+    <h2>Task Assignment</h2>
+</div>
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Project Title</th>
+        <th>Project Discription</th>
+        <th>Action</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of Employees" >
+        <td>{{ employee.id }}</td>
+        <td>{{ employee.title }}</td>
+        <td>{{ employee.description }}</td>
+        <td><button type="button" class="Update">Assign Project</button></td>
+      </tr>
+    </tbody>
+  </table> -->
+  <div class="task-assignment">
+    <h2>Project Assignment</h2>
+</div>
+
+
+<div class="tdiv">
+    <table>
+        <thead>
+            <tr>
+              <th>ID</th>
+              <th>Project Title</th>
+              <th>Project Discription</th>
+              <th>Action</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let employee of Employees" >
+              <td>{{ employee.id }}</td>
+              <td>{{ employee.title }}</td>
+              <td>{{ employee.description }}</td>
+              <td><button type="submit" class="Update" (click)="openPopupForm(employee.id,employee.title)" >Assign Project</button></td>
+            </tr>
+          </tbody>
+      </table>
+</div>

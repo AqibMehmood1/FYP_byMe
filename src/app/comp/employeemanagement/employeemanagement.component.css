@@ -1,0 +1,87 @@
+.emp-management{
+    background-color: rgb(231, 229, 229);
+    padding: 10px;
+  }
+  .tdiv {
+    margin: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    border: 1px solid #B9B4C7;
+    padding: 8px;
+    text-align: left;
+    text-align: center;
+  }
+
+  th {
+    background-color: #5C5470;
+    color: #fff;
+  }
+
+  tr:nth-child(even) {
+    background-color: #B9B4C7;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  .remove {
+    background-color: #B9B4C7;
+    color:  #352F44;
+    border: 1px solid #5C5470;
+    margin: 5px;
+    border-radius:10px;
+    padding: 8px;
+    cursor: pointer;
+    transition: transform 0.3s; 
+  }
+  .add {
+    background-color: #5C5470;
+    color: White;
+    border: 1px solid #352F44;
+    margin-right: 75px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-radius:10px;
+    padding: 8px;
+    cursor: pointer;
+    transition: transform 0.3s; 
+   
+  }
+  .add-div{
+    text-align: end;
+    margin: 10px;
+  }
+  .Update {
+    background-color:  #5C5470;
+    color: #fff;
+    border: 1px solid #B9B4C7;
+    margin: 5px;
+    border-radius:10px;
+    padding: 8px;
+    cursor: pointer;
+    transition: transform 0.3s; 
+  }
+
+  .remove:hover {
+    /* background-color: #b3620d; */
+    transform: scale(1.1);
+  }
+  .add:hover {
+    /* background-color: #b3620d; */
+    transform: scale(1.1);
+  }
+  .Update:hover {
+    /* background-color: #b3620d; */
+    transform: scale(1.1);
+  }
+  .form-group{
+    margin-bottom: 5px;
+  }

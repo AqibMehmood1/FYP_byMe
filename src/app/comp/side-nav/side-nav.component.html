@@ -1,0 +1,44 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" class="sidebar" opened="true">
+    <mat-toolbar class="logo">
+      <div>
+        <a routerLink="/"><img src="assets/icon.jpeg" class="logoimg" alt="Logo" height="50px" width="50px"></a>
+      </div>
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/dashboard" class="sidebar-item"><mat-icon>dashboard</mat-icon><span class="menu">Dashboard</span></a>
+      <a mat-list-item routerLink="/SoftwareHouseManagement" class="sidebar-item"><mat-icon>home</mat-icon><span class="menu">SW House Management</span></a>
+      <a mat-list-item routerLink="/empmanagement" class="sidebar-item"><mat-icon>person</mat-icon><span class="menu">Employee Management</span></a>
+      <a mat-list-item routerLink="/promanagement" class="sidebar-item"><mat-icon>folder</mat-icon><span class="menu">Project Management</span></a>
+      <a mat-list-item routerLink="/Groupmanagement" class="sidebar-item"><mat-icon>category</mat-icon><span class="menu">Group Management</span></a>
+      <a mat-list-item routerLink="/Taskassignment" class="sidebar-item"><mat-icon>supervisor_account</mat-icon><span class="menu">Project Assignment</span></a>
+      <a mat-list-item routerLink="/Myprojects" class="sidebar-item"><mat-icon>category</mat-icon><span class="menu">My Projects</span></a>
+      <a mat-list-item routerLink="/permissions" class="sidebar-item"><mat-icon>lock</mat-icon><span class="menu">Permissions</span></a>
+      <a mat-list-item class="sidebar-item" (click)="logout()"><mat-icon>exit_to_app</mat-icon><span class="menu">Logout</span></a>
+      <!-- <a mat-list-item routerLink="/home" class="sidebar-item"><mat-icon style="bottom: 0%;">home</mat-icon><span class="menu">Home</span></a> -->
+      <!-- <a mat-list-item routerLink="/about" class="sidebar-item"><mat-icon>supervisor_account</mat-icon><span class="menu">Admin Management</span></a>
+      <a mat-list-item routerLink="/about" class="sidebar-item"><mat-icon>category</mat-icon><span class="menu">Category Management</span></a>
+      <a mat-list-item routerLink="/about" class="sidebar-item"><mat-icon>shopping_cart</mat-icon><span class="menu">Order Management</span></a>
+      <a mat-list-item routerLink="/about" class="sidebar-item"><mat-icon>monetization_on</mat-icon><span class="menu">Expenses Management</span></a> -->
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="main-toolbar">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span style="width: 80%;"></span>
+      <span class="For-alignment" style="display: flex; margin-right: 60px;">
+      <span class="title">A Collaborative Ecosystem for Software House Initiatives</span>
+      <span class="icons">
+        <span matTooltip="Notifications" aria-label="Icon"><mat-icon>notifications</mat-icon></span>
+        <span matTooltip="Messages" aria-label="Icon"><mat-icon>mail</mat-icon></span>
+        <span matTooltip="Fav List" aria-label="Icon"><mat-icon>favorite_border</mat-icon></span>
+      </span>
+      <span><input style="width: 250px;" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></span>
+      <span><button class="search" type="submit">Search</button></span>
+    </span>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

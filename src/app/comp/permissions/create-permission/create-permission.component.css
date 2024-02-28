@@ -1,0 +1,70 @@
+.emp-management{
+    background-color: rgb(231, 229, 229);
+    padding: 10px;
+  }
+  .tdiv {
+    margin: 20px;
+  }
+
+  .back{
+    background-color: #B9B4C7;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .back:hover{
+    background-color: #5C5470;
+  }
+  mat-card {
+    margin: 20px;
+  }
+  mat-card-title{
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+  }
+  .title{
+    background-color: rgb(231, 229, 229);
+    width: 100%;
+  }
+  mat-card-content{
+    padding: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input,
+  mat-select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #5c5470;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    color: #050505;
+  }
+  .create-div{
+    text-align: center;
+    padding: 15px;
+  }
+  .add {
+    background-color: #5C5470;
+    color: White;
+    border: 1px solid #352F44;
+    margin-right: 75px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-radius:10px;
+    padding: 8px;
+    cursor: pointer;
+    transition: transform 0.3s; 
+   
+  }
+  .add:hover {
+    /* background-color: #b3620d; */
+    transform: scale(1.1);
+  }

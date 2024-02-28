@@ -1,0 +1,34 @@
+<div class="title">
+  <div class="centered">
+    <b style="font-size: large;">Create Project</b>
+  </div>
+  <mat-icon class="closs"  (click)="onCancel()">close</mat-icon>
+</div>
+  <div class="popup-container">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    
+      <label for="name">Project Title:</label>
+      <input type="text" id="title" placeholder="Enter project title" name="title" formControlName="title" class="form-control">
+  
+      <label for="name">Discription:</label>
+      <textarea  id="discription" name="discription" placeholder="Discription" formControlName="discription" class="form-control"></textarea>
+  
+    <table formArrayName="modules">
+      <tr *ngFor="let quantity of modules().controls; let i=index" [formGroupName]="i">
+        
+        <td>Module {{i+1}} :</td>
+        <td>
+            <input type="text" formControlName="module" class="form-control">
+        </td>
+        <td>
+            <mat-icon class="remove" color="warn" (click)="removeModule(i)">delete_forever</mat-icon>
+        </td>
+      </tr>
+    </table>
+    <div style="text-align: center;"><button type="button" class="add-more" id="add" (click)="addQModule()" [innerText]="buttonText"></button></div>  
+        <div class="buttons-div"> 
+          <button type="cancel" (click)="onCancel()">Cancel</button>
+        <button type="submit">Create Project</button>
+        </div>
+       </form>
+    </div>

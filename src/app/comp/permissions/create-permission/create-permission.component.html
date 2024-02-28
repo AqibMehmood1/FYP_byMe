@@ -1,0 +1,132 @@
+<div class="emp-management">
+    <h2><mat-icon class="back"  routerLink="/permissions">arrow_back</mat-icon> Create Permissions</h2>
+</div>
+<mat-card>
+    <div class="title">
+        <mat-card-header>
+            <mat-card-title>
+                Permission Name
+            </mat-card-title>
+          </mat-card-header>
+    </div>
+    <div class="row">
+        <div class="col-md-6">  
+            <mat-card-content>
+                <label for="Address">Name</label>
+                <input type="text" placeholder="Enter Permission Name "  #address formControlName="name" class="input" />
+            </mat-card-content>       
+        </div>
+    </div>
+  </mat-card>
+<!-- //////////////////////////////////// -->
+  <mat-card>
+    <div class="title">
+        <mat-card-header>
+            <mat-card-title>
+                Permissions
+            </mat-card-title>
+          </mat-card-header>
+    </div>
+    <!-- //////////// -->
+    <div class="row">
+        <div class="col-md-6">  
+            <mat-card-content>
+                <label for="Dashboard">Dashboard</label>
+  <mat-select placeholder="Select" multiple formControlName="selectedOptions">
+    <mat-option *ngFor="let option of options" [value]="option.value">
+      {{ option.label }}
+    </mat-option>
+  </mat-select>
+            </mat-card-content>       
+        </div>
+
+        <div class="col-md-6">  
+            <mat-card-content>
+                <label for="emp">Employee Management</label>
+  <mat-select placeholder="Select" multiple formControlName="selectedOptions">
+    <mat-option *ngFor="let option of options" [value]="option.value">
+      {{ option.label }}
+    </mat-option>
+  </mat-select>
+            </mat-card-content>       
+        </div>
+    </div>
+     <!-- //////////// -->
+     <div class="row">
+        <div class="col-md-6">  
+            <mat-card-content>
+                <label for="Dashboard">Group Management</label>
+  <mat-select placeholder="Select" multiple formControlName="selectedOptions">
+    <mat-option *ngFor="let option of options" [value]="option.value">
+      {{ option.label }}
+    </mat-option>
+  </mat-select>
+            </mat-card-content>       
+        </div>
+
+        <div class="col-md-6">  
+            <mat-card-content>
+                <label for="emp">Project Management</label>
+  <mat-select placeholder="Select" multiple formControlName="selectedOptions">
+    <mat-option *ngFor="let option of options" [value]="option.value">
+      {{ option.label }}
+    </mat-option>
+  </mat-select>
+            </mat-card-content>       
+        </div>
+    </div>
+     <!-- //////////// -->
+     <div class="row">
+        <div class="col-md-6">  
+            <mat-card-content>
+                <label for="Dashboard">Software House Management</label>
+  <mat-select placeholder="Select" multiple formControlName="selectedOptions">
+    <mat-option *ngFor="let option of options" [value]="option.value">
+      {{ option.label }}
+    </mat-option>
+  </mat-select>
+            </mat-card-content>       
+        </div>
+
+        <div class="col-md-6">  
+            <mat-card-content>
+                <label for="emp">Project Assignment</label>
+  <mat-select placeholder="Select" multiple formControlName="selectedOptions">
+    <mat-option *ngFor="let option of options" [value]="option.value">
+      {{ option.label }}
+    </mat-option>
+  </mat-select>
+            </mat-card-content>       
+        </div>
+    </div>
+     <!-- //////////// -->
+     <div class="row">
+        <div class="col-md-6">  
+            <mat-card-content>
+                <label for="Dashboard">My Projects</label>
+  <mat-select placeholder="Select" multiple formControlName="selectedOptions">
+    <mat-option *ngFor="let option of options" [value]="option.value">
+      {{ option.label }}
+    </mat-option>
+  </mat-select>
+            </mat-card-content>       
+        </div>
+
+        <!-- <div class="col-md-6">  
+            <mat-card-content>
+                <label for="emp">Employee Management</label>
+  <mat-select placeholder="Select" multiple formControlName="selectedOptions">
+    <mat-option *ngFor="let option of options" [value]="option.value">
+      {{ option.label }}
+    </mat-option>
+  </mat-select>
+            </mat-card-content>       
+        </div> -->
+    </div>
+    <div class="row">
+        <div class="col-md-12 create-div"> 
+                <button type="button" class="add">Create Permission</button>    
+        </div>
+
+    </div>
+  </mat-card>

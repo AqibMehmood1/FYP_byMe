@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* header section */
+.navbar {
+  z-index: 1000;
+  position: sticky;
+  top: 0px;
+  /* padding: 1vw 5vw; */
+  .navbar-brand {
+    img {
+      height: 8vh;
+    }
+  }
+  .mat-tooltip {
+    z-index: 2000; /* Adjust as needed */
+  }
+  
+  .navbar-nav {
+    .nav-item {
+      margin: 15px 15px !important;
+      font-size: 13px;
+      /* list-style-type: circle; */
+      .nav-link {
+        font-family: var(--lato);
+      }
+    }
+
+    .custm {
+      background-color: rgb(52 93 159) ;
+      padding: 0px 4px;
+      border-radius: 20px;
+      a {
+        color: white !important;
+      }
+    }
+  }
+  .nav-link :hover{
+    color: rgb(52 93 159);
+  }
+  .active {
+    color: rgb(52 93 159) !important;
+  }
+}
+.nav-item-search{
+  margin-top: 15px;
+  margin-left: 0%;
+  margin-right: 40px;
+}
+.icons mat-icon{
+  margin-top: 5px;
+  margin-left: 15px;
+  
+}
+span[matTooltip] {
+  cursor: pointer;
+  color: #020202;
+}
+.btn-search{
+  border: 2px;
+  background-color: rgb(44, 129, 241);
+  color: white;
+  border-radius: 7px ;
+  padding: 8px;
+}
+.btn-search:hover{
+  background-color: rgb(9, 59, 139);
+}
+img{
+  margin-right: 80px;
+}

@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .graph-container {
+    margin-top: 30px;
+    padding: 15px;
+    border: 4px solid #5C5470;
+    border-radius: 20px;
+    background-color: #FAF0E6;
+    box-shadow: 5px 5px 15px #5C5470; /* Add box-shadow for 3D effect */
+  }
+
+  .graph {
+    width: 600px;
+    height: 500px;
+    border: 1px solid #5C5470;
+    border-radius: 10px;
+  }
+
+  .row1 {
+    margin-right: 15px;
+  }
+
+  .row2 {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .Dashboard{
+    background-color: rgb(231, 229, 229);
+    padding: 10px;
+  }

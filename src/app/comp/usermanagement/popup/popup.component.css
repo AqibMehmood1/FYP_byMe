@@ -1,0 +1,59 @@
+/* popup.component.css */
+.popup-container {
+    background-color:  #b9b4c7;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #5c5470;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    color: #050505;
+  }
+  .logo-input {
+    /* Apply styling for the input */
+    border: 2px solid #5C5470; /* Border color */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    padding: 8px; /* Optional: Add padding for better appearance */
+    background-color: #B9B4C7; /* Background color */
+  
+    /* Customize the appearance of the file input button */
+    color: #5C5470; /* Text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  
+    /* Optional: Adjust other styles based on your design */
+  }
+  
+  /* Optional: Style for hover effect */
+  .logo-input:hover {
+    background-color: #5C5470;
+    color: #B9B4C7;
+  }
+  
+  button {
+    background-color: #5c5470;
+    color: #b9b4c7;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  button:hover {
+    background-color: #352f44;
+  }
+  .buttons-div{
+    text-align: center;
+  }

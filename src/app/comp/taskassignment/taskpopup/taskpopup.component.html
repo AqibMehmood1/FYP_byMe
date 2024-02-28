@@ -1,0 +1,28 @@
+<!-- <div class="title">
+    <h2>
+        Create Employee
+    </h2>
+</div> -->
+<div class="title">
+  
+    <div class="centered">
+      <b style="font-size: large;">Assign Project</b>
+    </div>
+    <mat-icon class="closs"  (click)="onCancel()">close</mat-icon>
+  </div>
+  <div class="popup-container">
+    <!-- <h2>{{ data.message }}</h2> -->
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <Label>Project Title : <b>{{ data.title }}</b> </Label>
+        <!-- <b class="pro-title">{{ data.title }}</b> -->
+        <label for="userRole">Select Group:</label>
+        <select id="userRole" name="userRole" formControlName="userRole">
+          <option value="admin" *ngFor="let emp of Employees">{{emp.title}}</option>
+        </select>
+  
+        <div class="buttons-div"> 
+          <button type="cancel" (click)="onCancel()">Cancel</button>
+        <button type="submit">Assign Project</button>
+        </div>
+       </form>
+    </div>
